@@ -27,7 +27,9 @@
         <img src="#" width="" height="" alt="Icon favorites">
         <img src="#" width="" height="" alt="Icon number favorites">
       </button>
-      <button class="nav__button">ХОЧУ СЮДА!</button>
+      <form action="#" target="_blank">
+        <button class="nav__button">ХОЧУ СЮДА!</button>
+    </form>
     </nav>
   </header>
 
@@ -101,15 +103,17 @@
     <section class="main__search">
       <h2>ЗАИНТЕРЕСОВАЛИСЬ</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <form action="#" target="_blank">
+        <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    </form>
     </section>
 
     <section class="main__mailing-list">
       <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form>
-        <input type="email" placeholder="Ваш e-mail">
-        <button>ПОДПИСАТЬСЯ</button>
+      <form method="post">
+        <input type="email" name="e-mail" placeholder="Ваш e-mail">
+        <input type="submit" value="ПОДПИСАТЬСЯ">
       </form>
     </section>
   </main>
