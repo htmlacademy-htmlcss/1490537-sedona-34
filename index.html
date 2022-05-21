@@ -10,20 +10,31 @@
 <body>
   <!-- Header section-->
 
-  <header class="header">
+  <header class="page-header">
     <logo class="header-logo">
       <img src="#" width="" height="" alt="Логотип">
     </logo>
     <nav class="header-nav">
       <ul class="nav-list">
-        <li class="nav-list-item"><a href="#">Главная</a></li>
-        <li class="nav-list-item"><a href="#">О Седоне</a></li>
-        <li class="nav-list-item"><a href="#">Гостиницы</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">О Седоне</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Гостиницы</a></li>
       </ul>
-      <button class="nav-serch"></button>
-      <button class="nav-favorites"></button>
-      <form action="#" target="_blank">
-        <button class="nav-button btn">ХОЧУ СЮДА!</button>
+      <ul class="nav-list nav-user">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ХОЧУ СЮДА!</a>
+        </li>
+      </ul>
     </form>
     </nav>
   </header>
