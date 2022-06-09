@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/styles.css" rel="stylesheet">
   <title>Гостиницы Седоны</title>
 </head>
 
@@ -38,7 +39,8 @@
   </header>
 
   <main>
-    <h1 class="filter-title">Гостиницы Седоны</h1>
+    <section class="filter-section">
+    <h1 class="filter-title-main">Гостиницы Седоны</h1>
     <div class="breadcrumbs">
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
@@ -54,19 +56,19 @@
       <!-- СПИСОК ФИЛЬТРОВ ПО ИНФРАСТРУКТУРЕ -->
       <form class="filters" method="get" action="#">
         <fieldset class="infrastructure-filter-group">
-          <legend class="infrastructure-filter-title">Инфраструктура:</legend>
+          <legend class="infrastructure-filter-title filter-title">Инфраструктура:</legend>
           <ul class="infrastructure-filter-list">
-            <li class="infrastructure-filter-item">
+            <li class="infrastructure-filter-item item-text">
               <label>
                 <input type="checkbox" value="pool" checked>Бассейн
               </label>
             </li>
-            <li class="infrastructure-filter-item">
+            <li class="infrastructure-filter-item item-text">
               <label>
                 <input type="checkbox" value="parking" checked>Парковка
               </label>
             </li>
-            <li class="infrastructure-filter-item">
+            <li class="infrastructure-filter-item item-text">
               <label>
                 <input type="checkbox" value="Wi-Fi">Wi-Fi
               </label>
@@ -77,19 +79,19 @@
         <!-- СПИСОК ФИЛЬТРОВ ПО ТИПУ ЖИЛЬЯ -->
 
         <fieldset class="type-housing-filter-group">
-          <legend class="type-housing-filter-title">Тип жилья:</legend>
+          <legend class="type-housing-filter-title filter-title">Тип жилья:</legend>
           <ul class="type-housing-filter-list">
-            <li class="type-housing-filter-item">
+            <li class="type-housing-filter-item item-text">
               <label>
                 <input type="radio" name="type-housing" value="hotel" checked>Гостиница
               </label>
             </li>
-            <li class="type-housing-filter-item">
+            <li class="type-housing-filter-item item-text">
               <label>
                 <input type="radio" name="type-housing" value="motel">Мотель
               </label>
             </li>
-            <li class="type-housing-filter-item">
+            <li class="type-housing-filter-item item-text">
               <label>
                 <input type="radio" name="type-housing" value="apartments">Апартаменты
               </label>
@@ -99,7 +101,7 @@
 
         <!-- ФИЛЬТР ПО СТОИМОСТИ -->
         <fieldset class="price-filter-group">
-          <legend class="price-filter-title">Стоимость, ₽:</legend>
+          <legend class="price-filter-title filter-title">Стоимость, ₽:</legend>
           <label>
             <input type="text" name="min-price" value="0" placeholder="от">
           </label>
@@ -107,14 +109,15 @@
             <input type="text" name="max-price" value="9000" placeholder="до">
           </label>
         </fieldset>
-          <input type="submit" value="Применить">
+          <input class="submit" type="submit" value="Применить">
           <input type="reset">
       </form>
     </section>
+  </section>
 
     <section class="catalog-hotels">
       <div>
-        <h2 class="catalog-hotels-title">Найдено гостиниц: <span class="found-hotels">38</span></h2>
+        <h2 class="catalog-hotels-title title">Найдено гостиниц: <span class="found-hotels">38</span></h2>
         <select class="catalog-sorting">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -132,8 +135,8 @@
               <img src="images/hotel-foto/amara-resort-spa.jpg" width="300" height="210" alt="Гостиница Amara Resort & Spa">
               <h3 class="hotel-title">Amara Resort & Spa</h3>
             </a>
-            <p class="type-housing">Гостиница <span class="hotel-price">От 4000 ₽</span></p>
-            <a class="link-more" href="#">ПОДРОБНЕЕ</a>
+            <p class="type-housing item-text">Гостиница <span class="hotel-price item-text">От 4000 ₽</span></p>
+            <a class="link-more btn" href="#">ПОДРОБНЕЕ</a>
             <button class="hotel-button" type="button">В ИЗБРАННОЕ</button>
             <span class="rating-stars-4"></span>
             <span class="rating-text">Рейтинг: 8,5</span>
@@ -142,8 +145,8 @@
           <li>
             <img src="images/hotel-foto/villas-at-poco.jpg" width="300" height="210" alt="Гостиница Villas at Poco Diablo">
             <h3 class="hotel-title">Villas at Poco Diablo</h3>
-            <p class="type-housing">Гостиница <span class="hotel-price">От 5000 ₽</span></p>
-            <a class="link-more" href="#">ПОДРОБНЕЕ</a>
+            <p class="type-housing item-text">Гостиница <span class="hotel-price item-text">От 5000 ₽</span></p>
+            <a class="link-more btn" href="#">ПОДРОБНЕЕ</a>
             <button class="hotel-button" type="button">В ИЗБРАННОЕ</button>
             <span class="rating-stars-4"></span>
             <span class="rating-text">Рейтинг: 9,2</span>
@@ -152,8 +155,8 @@
           <li>
             <img src="images/hotel-foto/desert-quail.jpg" width="300" height="210" alt="Гостиница Desert Quail Inn">
             <h3 class="hotel-title">Desert Quail Inn</h3>
-            <p class="type-housing">Гостиница <span class="hotel-price">От 2500 ₽</span></p>
-            <a class="link-more" href="#">ПОДРОБНЕЕ</a>
+            <p class="type-housing item-text">Гостиница <span class="hotel-price item-text">От 2500 ₽</span></p>
+            <a class="link-more btn" href="#">ПОДРОБНЕЕ</a>
             <button class="hotel-button" type="button">В ИЗБРАННОЕ</button>
             <span class="rating-stars-3"></span>
             <span class="rating-text">Рейтинг: 6,9</span>
@@ -162,8 +165,8 @@
           <li>
             <img src="images/hotel-foto/greentree-inn.jpg" width="300" height="210" alt="Гостиница GreenTree Inn">
             <h3 class="hotel-title">GreenTree Inn</h3>
-            <p class="type-housing">Гостиница <span class="hotel-price">От 1500 ₽</span></p>
-            <a class="link-more" href="#">ПОДРОБНЕЕ</a>
+            <p class="type-housing item-textv">Гостиница <span class="hotel-price item-text">От 1500 ₽</span></p>
+            <a class="link-more btn" href="#">ПОДРОБНЕЕ</a>
             <button class="hotel-button" type="button">В ИЗБРАННОЕ</button>
             <span class="rating-stars-2"></span>
             <span class="rating-text">Рейтинг: 8,5</span>
@@ -191,14 +194,14 @@
       </form>
     </section>
 
-    <section class="mailing-list">
+    <section class="mailing-list-catalog">
       <h2 class="mailing-list-title title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
       <p class="mailing-list-text text-main">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form method="post">
         <label>
           <input type="email" name="e-mail" placeholder="Ваш e-mail">
         </label>
-        <button type="submit">ПОДПИСАТЬСЯ</button>
+        <button class="submit" type="submit">ПОДПИСАТЬСЯ</button>
       </form>
     </section>
   </main>
@@ -207,10 +210,9 @@
   <footer class="footer">
     <div class="social-icons">
       <ul class="social-icons-list">
-        <li class="icon-item"><a class="link-icon" href="https://vk.com/htmlacademy">Вконтакте</a></li><!-- vk -->
-        <li class="icon-item"><a class="link-icon" href="https://t.me/htmlacademy">Телеграмм</a></li><!-- telegram -->
-        <li class="icon-item"><a class="link-icon" href="https://www.youtube.com/user/htmlacademyru">YouTube</a></li>
-        <!-- youtube -->
+        <li class="icon-item icon-vk"><a class="link-icon" href="https://vk.com/htmlacademy"></a></li>
+        <li class="icon-item icon-tg"><a class="link-icon" href="https://t.me/htmlacademy"></a></li>
+        <li class="icon-item icon-youtube"><a class="link-icon" href="https://www.youtube.com/user/htmlacademyru"></a></li>
       </ul>
     </div>
     <div class="footer-tel"><a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12</a></div>
