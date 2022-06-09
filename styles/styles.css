@@ -26,7 +26,15 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+  background-color: #756157;
 }
+.hotel-button, .submit {
+color: #FFFFFF;
+background-color: #82B3D3;
+}
+
+
+
 
 .header-nav {
   font-weight: 700;
