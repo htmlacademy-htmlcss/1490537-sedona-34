@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -82,44 +82,44 @@ body {
 }
 
 .main-header {
-background-image: url("/images/index-background.jpg");
+background-image: url("../images/index-background.jpg");
 height: 485px;
 }
 
 .mailing-list {
-  background-image: url("/images/background-mailing.jpg");
+  background-image: url("../images/background-mailing.jpg");
   height: 410px;
 }
 
 .search-icon {
-  background-image: url("/images/icons/search-icon.svg");
+  background-image: url("../images/icons/search-icon.svg");
   background-repeat: no-repeat;
 }
 
 .favorites-icon {
-  background-image: url("/images/icons/favorite-icon.svg");
+  background-image: url("../images/icons/favorite-icon.svg");
   background-repeat: no-repeat;
 }
 
 .icon-vk {
-  background-image: url("/images/icons/social-icon/vk-icon.svg");
+  background-image: url("../images/icons/social-icon/vk-icon.svg");
   background-repeat: no-repeat;
 }
 
 .icon-tg {
-  background-image: url("/images/icons/social-icon/telegram-icon.svg");
+  background-image: url("../images/icons/social-icon/telegram-icon.svg");
   background-repeat: no-repeat;
 }
 
 .icon-youtube {
-  background-image: url("/images/icons/social-icon/youtube-icon.svg");
+  background-image: url("../images/icons/social-icon/youtube-icon.svg");
   background-repeat: no-repeat;
 }
 
 /* CATALOG.HTML */
 
 .filter-section {
-  background-image: url("/images/background-filters.jpg");
+  background-image: url("../images/background-filters.jpg");
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
